@@ -1,1 +1,3 @@
-
+-SoundCloud'un API'ini kullanarak oluşturulan sesli muzik komut sistemi oluşturuldu
+-Mikrofon kullanım izni verilerek sesi metine çevrildi.
+-play,next,skip vs gibi komutlar ile sesli komutlara sistem cevap veriyor
