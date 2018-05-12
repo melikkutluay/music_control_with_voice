@@ -12,3 +12,5 @@ function start(){
     }
     recognition.start();
 }
+
+

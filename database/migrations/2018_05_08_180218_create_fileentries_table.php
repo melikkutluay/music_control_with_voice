@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class PostsTable extends Migration
+class CreateFileentriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class PostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::table('fileentries', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
-            $table->string('content');
-            $table->rememberToken();
+            $table->string('filename');
+            $table->string('mime');
+            $table->string('original_filename');
             $table->timestamps();
         });
     }
@@ -29,6 +29,8 @@ class PostsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('fileentries', function (Blueprint $table) {
+            //
+        });
     }
 }
